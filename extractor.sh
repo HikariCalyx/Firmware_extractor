@@ -67,9 +67,9 @@ ruu="$toolsdir/$HOST/bin/RUU_Decrypt_Tool"
 
 romzip="$(realpath $1)"
 romzipext=${romzip##*.}
-PARTITIONS="system vendor cust odm oem factory product xrom modem dtbo boot tz systemex oppo_product preload_common abl bluetooth cda cmnlib cmnlib64 devcfg dsp hidden hyp keymaster mdtp mdtpsecapp nvdef pmic rpm splash systeminfo xbl"
+PARTITIONS="system vendor cust odm oem factory product xrom modem dtbo boot tz systemex oppo_product preload_common abl bluetooth cda cmnlib cmnlib64 devcfg dsp hidden hyp keymaster mdtp mdtpsecapp nvdef pmic rpm splash systeminfo xbl preloader tee odmdtbo logo spmfw scp sspm cam_vpu1 cam_vpu2 cam_vpu3 md1img lk logo"
 EXT4PARTITIONS="system vendor cust odm oem factory product xrom systemex oppo_product preload_common"
-OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo abl:abl bluetooth:bluetooth cda:cda cmnlib.:cmnlib cmnlib64:cmnlib64 devcfg:devcfg dsp:dsp hidden:hidden hyp:hyp keymaster:keymaster mdtp.:mdtp mdtpsecapp:mdtpsecapp nvdef:nvdef pmic:pmic rpm:rpm splash:splash systeminfo:systeminfo xbl:xbl"
+OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo abl:abl bluetooth:bluetooth cda:cda cmnlib.:cmnlib cmnlib64:cmnlib64 devcfg:devcfg dsp:dsp hidden:hidden hyp:hyp keymaster:keymaster mdtp.:mdtp mdtpsecapp:mdtpsecapp nvdef:nvdef pmic:pmic rpm:rpm splash:splash systeminfo:systeminfo xbl:xbl tee:tee odmdtbo:odmdtbo logo:logo spmfw:spmfw scp:scp sspm:sspm cam_vpu1:cam_vpu1 cam_vpu2:cam_vpu2 cam_vpu3:cam_vpu3 preloader:preloader md1img:md1img lk:lk"
 
 echo "Create Temp and out dir"
 outdir="$LOCALDIR/out"

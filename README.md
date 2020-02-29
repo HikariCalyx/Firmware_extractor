@@ -30,3 +30,7 @@ wget https://dl.google.com/dl/android/aosp/walleye-pq3a.190705.001-factory-cc471
 ./extractor.sh firmware.zip
 ```
 output will be on "Firmware_extractor/out"
+
+# Above mover.sh and patcher.sh
+
+To be added.

@@ -67,9 +67,9 @@ ruu="$toolsdir/$HOST/bin/RUU_Decrypt_Tool"
 
 romzip="$(realpath $1)"
 romzipext=${romzip##*.}
-PARTITIONS="system vendor cust odm oem factory product xrom modem dtbo boot tz systemex oppo_product preload_common"
+PARTITIONS="system vendor cust odm oem factory product xrom modem dtbo boot tz systemex oppo_product preload_common abl bluetooth cda cmnlib cmnlib64 devcfg dsp hidden hyp keymaster mdtp mdtpsecapp nvdef pmic rpm splash systeminfo xbl"
 EXT4PARTITIONS="system vendor cust odm oem factory product xrom systemex oppo_product preload_common"
-OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo"
+OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo abl:abl bluetooth:bluetooth cda:cda cmnlib.:cmnlib cmnlib64:cmnlib64 devcfg:devcfg dsp:dsp hidden:hidden hyp:hyp keymaster:keymaster mdtp.:mdtp mdtpsecapp:mdtpsecapp nvdef:nvdef pmic:pmic rpm:rpm splash:splash systeminfo:systeminfo xbl:xbl"
 
 echo "Create Temp and out dir"
 outdir="$LOCALDIR/out"

@@ -62,6 +62,8 @@ Usage 1 (if you use full dump):
 ./patcher.sh -v dump_images.zip ota_package_1.zip ota_package_2.zip ota_package_3.zip ... ota_package_32767.zip
 ```
 
+However, if you only want to patch boot, dtbo, vbmeta, system, vendor and modem, you can just pack them as zip and patch them directly.
+
 Example:
 ```
 ./patcher.sh -v PNX-2590-0-00CN-B03.zip PNX-259E-0-00CN-B03-2590-0-00CN-B03-update.zip PNX-259G-0-00CN-B03-259E-0-00CN-B03-update.zip

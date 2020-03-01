@@ -34,7 +34,7 @@ output will be on "Firmware_extractor/out"
 # Above mover.sh and patcher.sh
 
 ## mover.sh
-The mover.sh is meant for moving unpacked FIHSW firmwares (a.k.a. nb0) and repacking them as patchable package.
+The mover.sh is meant for moving unpacked FIHSW firmwares (a.k.a. nb0) and repacking them as patchable package. HCTSW firmwares may work as well.
 
 Example:
 ```

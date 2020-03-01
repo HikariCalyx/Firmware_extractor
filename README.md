@@ -57,7 +57,7 @@ Comparing to original extractor.sh, this extractor.sh is modified for HMD Nokia 
 
 > A-Only device testing under progress...
 
-### Support A/B seamless update devices
+### Supported A/B seamless update devices
 - Nokia 3.1 (ES2)
 - Nokia 3.1 A & C (EAG)
 - Nokia 3.1 Plus (ROO)
@@ -82,7 +82,7 @@ Comparing to original extractor.sh, this extractor.sh is modified for HMD Nokia 
 - Sharp Aquos S3 / D10 (HH1 / HH6 / SD1)
 - Sharp Aquos S3 mini (SG1)
 
-### Unsupported A/B seamless update devices (from HMD Nokia) so far
+### Partially supported A/B seamless update devices (from HMD Nokia) so far
 - Nokia 2.2 (WSP)
 - Nokia 2.3 (IRM)
 

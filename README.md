@@ -144,4 +144,4 @@ chmod +x patch_a1n.sh
 patch_a1n.sh
 ```
 
-It will download and patch all the files automatically.
+It will download and patch all the files automatically, and patched build will be created at "A1N-311P-0-00CN-B01_process" directory.

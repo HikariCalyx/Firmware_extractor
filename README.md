@@ -7,12 +7,12 @@
 Take Debian-based distro (e.g. Ubuntu) for example. If you use other flavor (Redhat-based like Fedora or Arch-based like Manjaro), you'll use the package manager of your own distro. WSL is not tested yet and not guaranteed.
 ```
 apt install zip p7zip-full sharutils uudeview mpack arj cabextract file-roller rename liblzma-dev python-pip brotli
-pip install backports.lzma protobuf pycrypto
+pip install backports.lzma protobuf pycrypto bsdiff4
 ```
 ### Mac
 ```
 brew install protobuf liblzma-dev brotli lz4
-pip install backports.lzma protobuf pycrypto
+pip install backports.lzma protobuf pycrypto bsdiff4
 ```
 Also install [mono](https://www.mono-project.com/docs/getting-started/install/mac/)  
 

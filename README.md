@@ -33,4 +33,23 @@ output will be on "Firmware_extractor/out"
 
 # Above mover.sh and patcher.sh
 
-To be added.
+## mover.sh
+The mover.sh is meant for moving unpacked FIHSW firmwares (a.k.a. nb0) and repacking them as patchable package.
+
+Usage:
+```
+cd FIHSW_PNX-2590-0-00CN-B03_600CN_9_20190201.full
+# Command below is meant to ensure if there's systeminfo.img file exists, as the script will read original filename from it.
+ls | grep systeminfo.img
+../mover.sh
+```
+
+Soon a package will be created at root directory of this tool known as \[FIH_Firmware_Build_Version\].zip, in this case:
+> PNX-2590-0-00CN-B03.zip
+
+The FIH Firmware Build Version will be read from systeminfo.img as well.
+For MediaTek models, I tried to add a header at the beginning of preloader partition to make sure it will be processed by patcher.
+
+## patcher.sh
+
+TBA

@@ -114,3 +114,34 @@ All the updated images will be placed at out directory. Comparing to install the
 
 Please read this if you want to know details about FIH Firmware Build Version:
 https://forum.xda-developers.com/nokia-6/how-to/knowledge-fih-firmware-build-version-t3887411
+
+### Example of patching Nokia 8 Sirocco from A1N-311C-0-00CN-B01 to A1N-311P-0-00CN-B01
+
+Chinese version Nokia 8 Sirocco never has full OTA released so far.
+Here's the procedure I did:
+
+- Unpack A1N-311C-0-00CN-B01 and use mover.sh to create A1N-311C-0-00CN-B01.zip
+- Create a individual script for downloading updates and patching the build
+```
+#/bin/bash
+wget -O A1N-311G-0-00CN-B01-311C-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500001634
+wget -O A1N-311I-0-00CN-B01-311G-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500001746
+wget -O A1N-311J-0-00CN-B01-311I-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500001839
+wget -O A1N-311K-0-00CN-B01-311J-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500002016
+wget -O A1N-311M-0-00CN-B01-311K-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500002257
+wget -O A1N-311O-0-00CN-B01-311N-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500002716
+wget -O A1N-311P-0-00CN-B01-311O-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500002895
+./patcher.sh -v A1N-311C-0-00CN-B01.zip A1N-311G-0-00CN-B01-311C-0-00CN-B01-update.zip A1N-311I-0-00CN-B01-311G-0-00CN-B01-update.zip A1N-311J-0-00CN-B01-311I-0-00CN-B01-update.zip A1N-311K-0-00CN-B01-311J-0-00CN-B01-update.zip A1N-311M-0-00CN-B01-311K-0-00CN-B01-update.zip A1N-311O-0-00CN-B01-311N-0-00CN-B01-update.zip A1N-311P-0-00CN-B01-311O-0-00CN-B01-update.zip
+newfwver=`grep -a 'MLF' ./out/systeminfo.img`
+newfwver=`echo ${newfwver:4:19}`
+mv out ${newfwver}_process
+```
+Save it as patch_a1n.sh
+
+- Then:
+```
+chmod +x patch_a1n.sh
+patch_a1n.sh
+```
+
+It will download and patch all the files automatically.

@@ -1,7 +1,3 @@
-## To Chinese users
-You can clone the repo from Gitee instead for faster speed.
-https://gitee.com/HikariCalyx/Firmware_extractor
-
 ## Requirements
 - protobuf
 - LZMA
@@ -149,3 +145,7 @@ patch_a1n.sh
 ```
 
 It will download and patch all the files automatically, and patched build will be created at "A1N-311P-0-00CN-B01_process" directory.
+
+## To Chinese users
+You can clone the repo from Gitee instead for faster speed.
+https://gitee.com/HikariCalyx/Firmware_extractor

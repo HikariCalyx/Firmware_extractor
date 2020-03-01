@@ -77,4 +77,5 @@ Example:
 ./patcher.sh -v B2N-347C-0-00CN-B04-update.zip B2N-347D-0-00CN-B02-347C-0-00CN-B04-update.zip B2N-347H-0-00CN-B03-347D-0-00CN-B02-update.zip B2N-347I-0-00CN-B02-347H-0-00CN-B03-update.zip
 ```
 
-(Please read this if you want to know details about FIH Firmware Build Version)[https://forum.xda-developers.com/nokia-6/how-to/knowledge-fih-firmware-build-version-t3887411]
+Please read this if you want to know details about FIH Firmware Build Version:
+https://forum.xda-developers.com/nokia-6/how-to/knowledge-fih-firmware-build-version-t3887411

@@ -55,6 +55,37 @@ For MediaTek models, I tried to add a header at the beginning of preloader parti
 patcher.sh relies on extractor.sh to make it working.
 Comparing to original extractor.sh, this extractor.sh is modified for HMD Nokia Phones (and Probably Sharp Aquos S2 / C10 / S3 / S3 mini) with A/B seamless update.
 
+> A-Only device testing under progress...
+
+### Support A/B seamless update devices
+Nokia 3.1 (ES2)
+Nokia 3.1 A & C (EAG)
+Nokia 3.1 Plus (ROO)
+Nokia 3.1 Plus C (RHD)
+Nokia 3.2 / V (DPL / DVW)
+Nokia 4.2 (PAN)
+Nokia 5.1 (CO2)
+Nokia 5.1 Plus X5 (PDA)
+Nokia 6.1 (PL2)
+Nokia 6.1 Plus X6 (DRG)
+Nokia 6.2 (SLD)
+Nokia 7 (C1N)
+Nokia 7 Plus (B2N)
+Nokia 7.1 (CTL)
+Nokia X71 (TAS)
+Nokia 7.2 (DDV)
+Nokia 8 (NB1)
+Nokia 8 Sirocco (A1N)
+Nokia 8.1 X7 (PNX)
+Nokia 9 PureView (AOP)
+Sharp Aquos S2 / C10 (SS2 / SAT)
+Sharp Aquos S3 / D10 (HH1 / HH6 / SD1)
+Sharp Aquos S3 mini (SG1)
+
+### Unsupported A/B seamless update devices (from HMD Nokia) so far
+Nokia 2.2 (WSP)
+Nokia 2.3 (IRM)
+
 You can use it with either packed zip files that used what you dumped from phone, or full OTA package.
 
 Usage 1 (if you use full dump):

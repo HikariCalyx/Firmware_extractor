@@ -54,4 +54,4 @@ rm ${systemimg}
 echo Processing vendor image \(if exist\)...
 simg2img ${vendorimg} ../${fwver}_process/vendor.img
 rm ${vendorimg}
-zip -r -0 ../${fwver}.zip ../${fwver}_process/*
+zip -r ../${fwver}.zip ../${fwver}_process/*

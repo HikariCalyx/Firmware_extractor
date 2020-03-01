@@ -1,3 +1,7 @@
+## To Chinese users
+You can clone the repo from Gitee instead for faster speed.
+https://gitee.com/HikariCalyx/Firmware_extractor
+
 ## Requirements
 - protobuf
 - LZMA

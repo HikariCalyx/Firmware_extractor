@@ -4,9 +4,9 @@
 - 7z
 - lz4
 ### Linux
+Take Debian-based distro (e.g. Ubuntu) for example. If you use other flavor (Redhat-based like Fedora or Arch-based like Manjaro), you'll use the package manager of your own distro.
 ```
-apt install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller rename
-apt install liblzma-dev python-pip brotli lz4
+apt install zip p7zip-full sharutils uudeview mpack arj cabextract file-roller rename liblzma-dev python-pip brotli
 pip install backports.lzma protobuf pycrypto
 ```
 ### Mac
@@ -78,6 +78,8 @@ Example:
 ```
 ./patcher.sh -v B2N-347C-0-00CN-B04-update.zip B2N-347D-0-00CN-B02-347C-0-00CN-B04-update.zip B2N-347H-0-00CN-B03-347D-0-00CN-B02-update.zip B2N-347I-0-00CN-B02-347H-0-00CN-B03-update.zip
 ```
+
+All the updated images will be placed at out directory. Comparing to install them on the phone, this method is apparently faster.
 
 Please read this if you want to know details about FIH Firmware Build Version:
 https://forum.xda-developers.com/nokia-6/how-to/knowledge-fih-firmware-build-version-t3887411

@@ -115,12 +115,12 @@ All the updated images will be placed at out directory. Comparing to install the
 Please read this if you want to know details about FIH Firmware Build Version:
 https://forum.xda-developers.com/nokia-6/how-to/knowledge-fih-firmware-build-version-t3887411
 
-### Example of patching Nokia 8 Sirocco from A1N-311C-0-00CN-B01 to A1N-311P-0-00CN-B01
+### Example of patching existing Nokia 8 Sirocco build from A1N-311C-0-00CN-B01 to A1N-311P-0-00CN-B01
 
 Chinese version Nokia 8 Sirocco never has full OTA released so far.
 Here's the procedure I did:
 
-- Unpack A1N-311C-0-00CN-B01 and use mover.sh to create A1N-311C-0-00CN-B01.zip
+- Unpack A1N-311C-0-00CN-B01.nb0 and use mover.sh to create A1N-311C-0-00CN-B01.zip
 - Create a individual script for downloading updates and patching the build
 ```
 #/bin/bash

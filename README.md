@@ -55,7 +55,7 @@ For MediaTek models, I tried to add a header at the beginning of preloader parti
 patcher.sh relies on extractor.sh to make it working.
 Comparing to original extractor.sh, this extractor.sh is modified for HMD Nokia Phones (and Probably Sharp Aquos S2 / C10 / S3 / S3 mini) with A/B seamless update.
 
-> A-Only device testing under progress...
+> A-Only device unsupported.
 
 ### Supported A/B seamless update devices
 - Nokia 3.1 (ES2)

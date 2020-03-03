@@ -130,7 +130,7 @@ Here's the procedure I did:
 - Unpack A1N-311C-0-00CN-B01.nb0 and use mover.sh to create A1N-311C-0-00CN-B01.zip
 - Create a individual script for downloading updates and patching the build
 ```
-#/bin/bash
+#!/bin/bash
 wget -O A1N-311G-0-00CN-B01-311C-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500001634
 wget -O A1N-311I-0-00CN-B01-311G-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500001746
 wget -O A1N-311J-0-00CN-B01-311I-0-00CN-B01-update.zip https://ota-filesite.oss-cn-hangzhou.aliyuncs.com/SWUpdate/500001839

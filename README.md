@@ -4,13 +4,22 @@
 - 7z
 - lz4
 - simg2img
+- python 2
 
 ### Linux
-Take Debian-based distro (e.g. Ubuntu) for example. If you use other flavor (Redhat-based like Fedora or Arch-based like Manjaro), you'll use the package manager of your own distro. WSL is not tested yet and not guaranteed.
+Take Debian-based distro (e.g. Ubuntu) for example. If you use other flavor (Redhat-based like Fedora or Arch-based like Manjaro), you'll use the package manager of your own distro. 
+
+For Ubuntu 20.04 and other distro that deprecated Python 2, you'll need to install Python 2 individually:
+```
+apt install python2
+```
+
 ```
 apt install zip p7zip-full sharutils uudeview mpack arj cabextract file-roller rename liblzma-dev python-pip brotli
 pip install backports.lzma protobuf pycrypto bsdiff4
 ```
+
+
 
 To use mover.sh, you must install simg2img as well. It's known available on Deepin, Debian and Ubuntu. For Arch / Manjaro, you'll need to install "simg-tools" from AUR.
 ```

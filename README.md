@@ -7,7 +7,7 @@
 - python 2
 
 ### Linux
-Take Debian-based distro (e.g. Ubuntu) for example. If you use other flavor (Redhat-based like Fedora or Arch-based like Manjaro), you'll use the package manager of your own distro. 
+Take Debian-based distro (e.g. Ubuntu) for example. If you use other flavor (Redhat-based like Fedora or Arch-based like Manjaro), you'll use the package manager of your own distro. Windows users can utilize WSL2 instead.
 
 For Ubuntu 20.04 and other distro that deprecated Python 2, you'll need to install Python 2 individually:
 ```
